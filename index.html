@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MoodTraker Privacy Policy</title>
+<meta name="description" content="Privacy policy for MoodTraker, the annual mood tracker. No account, no server, nothing collected.">
+<style>
+  :root {
+    --bg: #FBF8F3;
+    --surface: #FFFFFF;
+    --ink: #39352E;
+    --muted: #8B8479;
+    --line: #E3DCD1;
+    --accent: #4A8371;
+    --m5: #EDDC98;
+    --m4: #B6D6AB;
+    --m3: #DCD3C4;
+    --m2: #B4B8EC;
+    --m1: #97A9CE;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #17150F;
+      --surface: #201D16;
+      --ink: #ECE5D9;
+      --muted: #9C9486;
+      --line: #3A352B;
+      --accent: #8FC9B6;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 48px 20px 96px;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; }
+
+  h1 {
+    font-size: 2.1rem;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    margin: 0 0 14px;
+  }
+
+  /* The five mood colours are the whole vocabulary of the app: one square per day, one colour per
+     mood. Repeating the strip here is the only decoration the page gets. */
+  .strip { display: flex; gap: 5px; margin: 0 0 24px; }
+  .strip span {
+    width: 26px;
+    height: 26px;
+    border-radius: 7px;
+    display: block;
+  }
+  .strip span:nth-child(1) { background: var(--m5); }
+  .strip span:nth-child(2) { background: var(--m4); }
+  .strip span:nth-child(3) { background: var(--m3); }
+  .strip span:nth-child(4) { background: var(--m2); }
+  .strip span:nth-child(5) { background: var(--m1); }
+
+  h2 {
+    font-size: 1.22rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 46px 0 10px;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+  }
+  h2::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    border-radius: 3px;
+    background: var(--m3);
+    flex: none;
+  }
+  h2:nth-of-type(5n+1)::before { background: var(--m5); }
+  h2:nth-of-type(5n+2)::before { background: var(--m4); }
+  h2:nth-of-type(5n+3)::before { background: var(--m3); }
+  h2:nth-of-type(5n+4)::before { background: var(--m2); }
+  h2:nth-of-type(5n)::before   { background: var(--m1); }
+
+  h3 { font-size: 1rem; font-weight: 600; margin: 26px 0 6px; }
+  p, li { color: var(--ink); }
+  .lede { color: var(--muted); margin: 0 0 6px; }
+  .updated { color: var(--muted); font-size: 0.9rem; margin: 0 0 30px; }
+  .nav { margin: 0 0 34px; font-size: 0.9rem; }
+  .nav a { color: var(--accent); text-decoration: none; margin-right: 16px; }
+  .nav a:hover { text-decoration: underline; }
+  .box {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin: 26px 0;
+  }
+  .box p:first-child { margin-top: 0; }
+  .box p:last-child { margin-bottom: 0; }
+  .wrap { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 0.94rem; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; }
+  a { color: var(--accent); }
+  code {
+    background: var(--line);
+    padding: 1px 5px;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 72px 0 44px; }
+  footer { color: var(--muted); font-size: 0.88rem; margin-top: 52px; }
+  .note { color: var(--muted); font-size: 0.9rem; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
+</style>
+</head>
+<body>
+<main>
+
+<h1 id="en">MoodTraker Privacy Policy</h1>
+<div class="strip" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+<p class="lede">MoodTraker is a mood tracker: one square per day, a whole year on one screen.</p>
+<p class="updated">Last updated: 17 September 2026</p>
+<p class="nav"><a href="#es">Español</a><a href="mailto:baltajmn@gmail.com">baltajmn@gmail.com</a></p>
+
+<div class="box">
+<p><strong>The short version.</strong> MoodTraker has no accounts and no server of ours. Your moods,
+your days, your notes, your tags and your photos are files on your phone. We cannot read them, we
+have no copy of them, and we could not hand them to anyone if we wanted to. Uninstalling the app
+deletes them.</p>
+</div>
+
+<h2>What stays on your device</h2>
+<p>Everything you put into MoodTraker: the mood you pick for each day, the notes you write, the tags
+you add, the names and colours of your moods, your reminder time, and any photo you attach to a
+mood. All of it lives in the app's private storage, which no other app on your phone can read.</p>
+<p>There is no sign-up. We never ask for your name, your email address or your phone number, because
+there is nothing to attach them to.</p>
+
+<h3>Photos</h3>
+<p>When you attach a photo to a mood, Android's or iOS's own picker hands the app that one image, and
+the app copies it into its private storage so it can draw it in the year grid and on share cards.
+The copy never leaves your device. <strong>MoodTraker never reads your photo library</strong>: it
+only ever receives the single image you chose in the system picker, and it does not ask for gallery
+permission.</p>
+
+<h3>Backups you make</h3>
+<p>Export writes your moods, days and photos into one file and hands it to the system share sheet, so
+you decide where it goes. Once you have saved it, that file is yours and is outside our control. If
+you put it in a cloud folder, that provider's policy applies to it, not this one.</p>
+
+<h3>Backups Android makes</h3>
+<p>If Android's backup is switched on, your phone may keep a copy of the app's data in
+<strong>your own Google account</strong> and restore it when you reinstall or move to a new phone.
+That copy belongs to you and to Google, not to us: we never see it and cannot reach it. You can turn
+it off in Android's backup settings.</p>
+
+<h2>What leaves your device</h2>
+
+<h3>Today: nothing</h3>
+<p>As shipped, MoodTraker makes no network requests at all. It has no server to talk to.</p>
+
+<h3>When purchases are switched on</h3>
+<p>MoodTraker offers a single one-time in-app purchase. Payments are processed by the store you
+installed it from, <strong>Google Play</strong> or the <strong>App Store</strong>. We never see or
+receive your card details, your billing address or any other payment information.</p>
+<p>To know whether a given installation has bought Pro, the app uses <strong>RevenueCat, Inc.</strong>
+as a processor. RevenueCat assigns each installation an anonymous identifier and stores, on our
+behalf, that identifier, the purchase history attached to it, and technical device identifiers.
+Because MoodTraker has no accounts, that identifier is not linked to your name, your email address or
+any profile. See <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat's privacy
+policy</a>.</p>
+<p>RevenueCat processes data in the United States. Transfers outside the European Economic Area are
+covered by the European Commission's Standard Contractual Clauses.</p>
+
+<h3>Nothing else</h3>
+<p>MoodTraker contains no advertising SDK, no analytics SDK and no crash-reporting SDK. We do not
+build profiles, we do not use remarketing, and we do not sell or share personal information with
+anyone. The only reason the app would ever reach the network is to check your purchase status.</p>
+
+<h2>Permissions the app asks for</h2>
+<div class="wrap">
+<table>
+  <tr><th>Permission</th><th>Why</th></tr>
+  <tr><td>Notifications</td><td>To show the daily reminder you set. The notification is built on your device; nothing goes through a server.</td></tr>
+  <tr><td>Run at startup</td><td>To put your reminder back after the phone reboots. Without it, reminders would silently stop.</td></tr>
+  <tr><td>Internet, network state</td><td>Only to check your purchase status. Unused while purchases are off.</td></tr>
+  <tr><td>In-app billing</td><td>To offer the Pro purchase through Google Play.</td></tr>
+  <tr><td>Wake lock, foreground service</td><td>Required by the library that keeps the home screen widget up to date.</td></tr>
+</table>
+</div>
+<p class="note">That is the complete list in the Android package, plus one permission the app defines
+for itself so that only its own components can talk to its widget. MoodTraker does
+<strong>not</strong> request your location, your contacts, your camera, your microphone or your photo
+library. On iOS it only ever asks for notifications.</p>
+
+<h2>How long data is kept</h2>
+<p>Data on your device is kept until you delete the day or uninstall the app. Purchase records held by
+RevenueCat and by the app store are kept for as long as those services need in order to honour
+restores and to meet their own legal and tax obligations.</p>
+
+<h2>Children</h2>
+<p>MoodTraker is not directed at children under 13 and we do not knowingly collect information from
+them. The app has no accounts, no public content and no social features.</p>
+
+<h2>Your rights under the GDPR</h2>
+<p>If you are in the European Economic Area or the United Kingdom, you have the right to access,
+rectify, erase, restrict and object to the processing of your personal data, and the right to data
+portability.</p>
+<p>In practice you can exercise most of these yourself, instantly, because the data is on your phone:
+deleting a day erases it, uninstalling erases everything, and Export is data portability. For the
+purchase data held by RevenueCat, write to
+<a href="mailto:baltajmn@gmail.com">baltajmn@gmail.com</a> and we will act on your request. Note that
+we can only find your records if you give us the anonymous identifier or the store order number,
+precisely because we hold nothing that identifies you.</p>
+<p>Legal bases: performance of a contract (delivering the purchase you made) and our legitimate
+interest in preventing fraudulent restores. You also have the right to complain to your supervisory
+authority. In Spain, the <a href="https://www.aepd.es" rel="noopener">Agencia Española de Protección
+de Datos</a>.</p>
+
+<h2>Your rights under the CCPA / CPRA</h2>
+<p>If you are a California resident: in the last twelve months we have collected the categories
+"identifiers" (an anonymous installation identifier and device identifiers) and "commercial
+information" (your purchase history), for the sole purpose of delivering the product you bought.</p>
+<p>We have <strong>not</strong> sold or shared personal information, and we do not use it for
+cross-context behavioural advertising. We do not knowingly sell the personal information of anyone
+under 16. You have the right to know, to delete, to correct, and not to be discriminated against for
+exercising those rights. Write to <a href="mailto:baltajmn@gmail.com">baltajmn@gmail.com</a>.</p>
+
+<h2>Do Not Track</h2>
+<p>MoodTraker does not track you across apps or websites, so there is no tracking behaviour to change
+in response to a Do Not Track signal.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the date at the top changes with it. Changes that affect what leaves your
+device will also be described in the app's release notes.</p>
+
+<h2>Contact</h2>
+<p><a href="mailto:baltajmn@gmail.com">baltajmn@gmail.com</a></p>
+
+<hr>
+
+<h1 id="es">Política de privacidad de MoodTraker</h1>
+<div class="strip" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+<p class="lede">MoodTraker es un registro de ánimo: un cuadrado por día, el año entero en una pantalla.</p>
+<p class="updated">Última actualización: 17 de septiembre de 2026</p>
+<p class="nav"><a href="#en">English</a><a href="mailto:baltajmn@gmail.com">baltajmn@gmail.com</a></p>
+
+<div class="box">
+<p><strong>La versión corta.</strong> MoodTraker no tiene cuentas ni servidor nuestro. Tus ánimos, tus
+días, tus notas, tus etiquetas y tus fotos son ficheros de tu teléfono. No podemos leerlos, no
+tenemos copia y no podríamos dárselos a nadie aunque quisiéramos. Desinstalar la app los borra.</p>
+</div>
+
+<h2>Lo que se queda en tu dispositivo</h2>
+<p>Todo lo que pones en MoodTraker: el ánimo de cada día, las notas que escribes, las etiquetas que
+añades, los nombres y colores de tus ánimos, la hora del recordatorio y cualquier foto que pongas en
+un ánimo. Todo vive en el almacenamiento privado de la app, que ninguna otra app de tu teléfono
+puede leer.</p>
+<p>No hay registro. Nunca te pedimos tu nombre, tu correo ni tu teléfono, porque no hay nada a lo que
+asociarlos.</p>
+
+<h3>Fotos</h3>
+<p>Cuando pones una foto en un ánimo, el selector del propio sistema le entrega a la app esa única
+imagen, y la app la copia a su almacenamiento privado para poder dibujarla en la cuadrícula del año
+y en las tarjetas para compartir. La copia no sale del dispositivo. <strong>MoodTraker no lee tu
+galería</strong>: solo recibe la imagen que tú eliges en el selector, y no pide permiso de galería.</p>
+
+<h3>Las copias que haces tú</h3>
+<p>Exportar crea un fichero con tus ánimos, tus días y tus fotos, y te lo entrega a la hoja de
+compartir del sistema para que decidas dónde va. Una vez guardado, ese fichero es tuyo y está fuera
+de nuestro control. Si lo dejas en una carpeta en la nube, se le aplica la política de ese proveedor,
+no esta.</p>
+
+<h3>La copia que hace Android</h3>
+<p>Si tienes activada la copia de seguridad de Android, tu teléfono puede guardar una copia de los
+datos de la app en <strong>tu propia cuenta de Google</strong> y devolvértela al reinstalar o al
+cambiar de teléfono. Esa copia es tuya y de Google, no nuestra: nosotros no la vemos ni podemos
+acceder a ella. Se desactiva en los ajustes de copia de seguridad de Android.</p>
+
+<h2>Lo que sale de tu dispositivo</h2>
+
+<h3>Hoy: nada</h3>
+<p>Tal y como se publica, MoodTraker no hace ninguna conexión de red. No tiene ningún servidor con el
+que hablar.</p>
+
+<h3>Cuando se activen las compras</h3>
+<p>MoodTraker ofrece un único pago dentro de la app, por una sola vez. El pago lo procesa la tienda
+desde la que la instalaste, <strong>Google Play</strong> o la <strong>App Store</strong>. Nosotros no
+vemos ni recibimos los datos de tu tarjeta, tu dirección de facturación ni ningún otro dato de
+pago.</p>
+<p>Para saber si una instalación ha comprado Pro, la app usa a <strong>RevenueCat, Inc.</strong> como
+encargado del tratamiento. RevenueCat asigna a cada instalación un identificador anónimo y guarda,
+por cuenta nuestra, ese identificador, el historial de compra asociado e identificadores técnicos del
+dispositivo. Como MoodTraker no tiene cuentas, ese identificador no está ligado a tu nombre, a tu
+correo ni a ningún perfil. Su
+<a href="https://www.revenuecat.com/privacy" rel="noopener">política de privacidad</a>.</p>
+<p>RevenueCat trata los datos en Estados Unidos. Las transferencias fuera del Espacio Económico
+Europeo están cubiertas por las Cláusulas Contractuales Tipo de la Comisión Europea.</p>
+
+<h3>Nada más</h3>
+<p>MoodTraker no lleva SDK de publicidad, ni de analítica, ni de informes de fallos. No hacemos
+perfiles, no hacemos remarketing y no vendemos ni compartimos información personal con nadie. La
+única razón por la que la app tocaría la red es comprobar el estado de tu compra.</p>
+
+<h2>Permisos que pide la app</h2>
+<div class="wrap">
+<table>
+  <tr><th>Permiso</th><th>Para qué</th></tr>
+  <tr><td>Notificaciones</td><td>Para mostrar el recordatorio diario que configures. La notificación se construye en tu dispositivo; no pasa por ningún servidor.</td></tr>
+  <tr><td>Ejecutar al iniciar</td><td>Para volver a poner tu recordatorio después de reiniciar el teléfono. Sin él, los recordatorios dejarían de sonar sin avisar.</td></tr>
+  <tr><td>Internet, estado de la red</td><td>Solo para comprobar el estado de tu compra. Sin usar mientras las compras estén desactivadas.</td></tr>
+  <tr><td>Compras en la aplicación</td><td>Para ofrecer la compra de Pro a través de Google Play.</td></tr>
+  <tr><td>Wake lock, servicio en primer plano</td><td>Los pide la biblioteca que mantiene al día el widget de la pantalla de inicio.</td></tr>
+</table>
+</div>
+<p class="note">Esa es la lista completa del paquete de Android, más un permiso que la app se define a
+sí misma para que solo sus propios componentes puedan hablar con su widget. MoodTraker
+<strong>no</strong> pide tu ubicación, tus contactos, tu cámara, tu micrófono ni tu galería. En iOS
+solo pide notificaciones.</p>
+
+<h2>Cuánto tiempo se guardan los datos</h2>
+<p>Los datos de tu dispositivo se guardan hasta que borras el día o desinstalas la app. Los registros
+de compra que tienen RevenueCat y la tienda se guardan el tiempo que esos servicios necesiten para
+poder restaurar la compra y para cumplir sus propias obligaciones legales y fiscales.</p>
+
+<h2>Menores</h2>
+<p>MoodTraker no está dirigida a menores de 13 años y no recogemos información de ellos a sabiendas.
+La app no tiene cuentas, ni contenido público, ni funciones sociales.</p>
+
+<h2>Tus derechos según el RGPD</h2>
+<p>Si estás en el Espacio Económico Europeo o en el Reino Unido, tienes derecho a acceder, rectificar,
+suprimir, limitar y oponerte al tratamiento de tus datos personales, y derecho a la portabilidad.</p>
+<p>En la práctica casi todos puedes ejercerlos tú, al instante, porque los datos están en tu teléfono:
+borrar un día lo borra, desinstalar lo borra todo y Exportar es la portabilidad. Para los datos de
+compra que tiene RevenueCat, escribe a
+<a href="mailto:baltajmn@gmail.com">baltajmn@gmail.com</a> y actuaremos sobre tu solicitud. Ten en
+cuenta que solo podemos localizar tus registros si nos das el identificador anónimo o el número de
+pedido de la tienda, precisamente porque no guardamos nada que te identifique.</p>
+<p>Bases jurídicas: la ejecución de un contrato (entregarte la compra que hiciste) y nuestro interés
+legítimo en evitar restauraciones fraudulentas. También tienes derecho a reclamar ante tu autoridad
+de control. En España, la <a href="https://www.aepd.es" rel="noopener">Agencia Española de Protección
+de Datos</a>.</p>
+
+<h2>Tus derechos según la CCPA / CPRA</h2>
+<p>Si resides en California: en los últimos doce meses hemos recogido las categorías "identificadores"
+(un identificador anónimo de instalación e identificadores de dispositivo) e "información comercial"
+(tu historial de compra), con el único fin de entregarte el producto que compraste.</p>
+<p><strong>No</strong> hemos vendido ni compartido información personal, y no la usamos para
+publicidad conductual entre contextos. No vendemos a sabiendas la información personal de menores de
+16 años. Tienes derecho a saber, a borrar, a corregir y a no sufrir discriminación por ejercer esos
+derechos. Escribe a <a href="mailto:baltajmn@gmail.com">baltajmn@gmail.com</a>.</p>
+
+<h2>Do Not Track</h2>
+<p>MoodTraker no te sigue entre apps ni entre webs, así que no hay ningún comportamiento de
+seguimiento que cambiar en respuesta a una señal Do Not Track.</p>
+
+<h2>Cambios</h2>
+<p>Si esta política cambia, la fecha de arriba cambia con ella. Los cambios que afecten a lo que sale
+de tu dispositivo se describirán además en las novedades de la versión.</p>
+
+<h2>Contacto</h2>
+<p><a href="mailto:baltajmn@gmail.com">baltajmn@gmail.com</a></p>
+
+<footer>
+<p>MoodTraker, <code>com.baltajmn.mood</code>. Android e iOS.</p>
+</footer>
+
+</main>
+</body>
+</html>
