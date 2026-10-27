@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.baltajmn.mood",
+      "sha256_cert_fingerprints": [
+        "BC:89:59:93:27:37:DA:3F:AC:29:77:51:F8:02:33:68:BC:9A:A0:19:20:C8:61:44:32:8A:81:B8:C4:3D:5F:06",
+        "49:71:FB:BB:15:63:29:DE:3E:8D:F3:58:47:03:29:7A:2A:39:BA:B3:A7:15:08:88:CF:4D:24:CA:34:9E:17:EE"
+      ]
+    }
+  }
+]
