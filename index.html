@@ -123,22 +123,26 @@
 <h1 id="en">MoodTraker Privacy Policy</h1>
 <div class="strip" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
 <p class="lede">MoodTraker is a mood tracker: one square per day, a whole year on one screen.</p>
-<p class="updated">Last updated: 17 September 2026</p>
+<p class="updated">Last updated: 27 October 2026</p>
 <p class="nav"><a href="#es">Español</a><a href="mailto:baltajmn@gmail.com">baltajmn@gmail.com</a></p>
 
 <div class="box">
-<p><strong>The short version.</strong> MoodTraker has no accounts and no server of ours. Your moods,
-your days, your notes, your tags and your photos are files on your phone. We cannot read them, we
-have no copy of them, and we could not hand them to anyone if we wanted to. Uninstalling the app
-deletes them.</p>
+<p><strong>The short version.</strong> MoodTraker works without an account. Your moods, your days,
+your notes, your tags and your photos are files on your phone. We cannot read them and we have no copy
+of them, with one exception that you choose and can switch off at any time: if you create an optional
+account to see your friends' mood and let them see yours, the face and the colour of the days you
+choose to share are kept on our server for a day or two. Notes, tags, photos and the names of your
+moods never leave your phone. Uninstalling the app deletes your files; deleting your account deletes
+what is on the server.</p>
 </div>
 
 <h2>What stays on your device</h2>
 <p>Everything you put into MoodTraker: the mood you pick for each day, the notes you write, the tags
 you add, the names and colours of your moods, your reminder time, and any photo you attach to a
 mood. All of it lives in the app's private storage, which no other app on your phone can read.</p>
-<p>There is no sign-up. We never ask for your name, your email address or your phone number, because
-there is nothing to attach them to.</p>
+<p>Without an account we never ask for your name, your email address or your phone number, because
+there is nothing to attach them to. Your notes, tags, photos and the names you give your moods stay in
+this storage even if you use the optional account described below.</p>
 
 <h3>Photos</h3>
 <p>When you attach a photo to a mood, Android's or iOS's own picker hands the app that one image, and
@@ -160,10 +164,7 @@ it off in Android's backup settings.</p>
 
 <h2>What leaves your device</h2>
 
-<h3>Today: nothing</h3>
-<p>As shipped, MoodTraker makes no network requests at all. It has no server to talk to.</p>
-
-<h3>When purchases are switched on</h3>
+<h3>Purchases</h3>
 <p>MoodTraker offers a single one-time in-app purchase. Payments are processed by the store you
 installed it from, <strong>Google Play</strong> or the <strong>App Store</strong>. We never see or
 receive your card details, your billing address or any other payment information.</p>
@@ -176,20 +177,63 @@ policy</a>.</p>
 <p>RevenueCat processes data in the United States. Transfers outside the European Economic Area are
 covered by the European Commission's Standard Contractual Clauses.</p>
 
+<h3>Seeing your friends' mood (optional account)</h3>
+<p>Everything above works without an account. Only seeing your friends' mood, and letting them see
+yours, asks you to sign in, with <strong>Sign in with Apple</strong> or <strong>Google</strong>, and only
+when you open that part of the app. If you never do, nothing in this section applies to you.</p>
+<p>When you use it we store, on our server: the identifier and the email address that Apple or Google
+give us when you sign in (with Apple you may choose a private relay address), the <strong>name you
+choose to show</strong>, your friend code, your friends and friend requests, the people you block, the
+reports you send, and the hugs you send and receive (from whom, to whom and which day). For each day you
+choose to share we store the date and the <strong>score (1 to 5), colour and emoji</strong> of the mood
+you picked. We never store or receive the name of the mood, your notes, your tags or your photos.</p>
+<p><strong>Your mood is health data</strong>, so we ask for your explicit consent before storing
+anything: it is the first question you see after signing in, with nothing pre-selected (share always,
+ask me every day, or never). We keep your answer and the date you gave it. You can change it at any time
+in Settings; choosing not to share stops it and deletes the days we hold. Until you answer, and if you
+choose not to share, nothing about your days is stored. A day you keep private leaves no trace on the
+server, so nobody can tell that you hid one. Choosing not to share does not stop you from seeing your
+friends.</p>
+<p>Your friends, and nobody else, see your chosen name and the face and colour you shared for today and
+yesterday. The server deletes days and hugs older than two days every night, and a day you delete or
+switch to private on your phone is removed from the server too.</p>
+<p>The server is run by <strong>Supabase, Inc.</strong> as a processor, in the European Union (Frankfurt,
+Germany). The same account system is shared with Chroma, FlowTime and Quilt, other apps by the same
+developer: if you sign in to several of them with the same Apple or Google account, it is one account,
+but each app keeps its own name, friends and data, and no app can see another's.</p>
+<p>There is zero tolerance for abusive names. You can report or block anyone from the app, and a report
+sends us an email with the names of the two people involved so that we can act within 24 hours; it is
+delivered by <strong>Resend, Inc.</strong> as a processor. See the <a href="terms.html">terms of
+use</a>.</p>
+<p>So that MoodTraker can tell you when someone sends you a friend request, accepts yours or sends you a
+hug, also with the app closed, we store a <strong>notification token</strong> for your phone with your
+account. It is handed to <strong>Google</strong> (Firebase Cloud Messaging, on Android) or
+<strong>Apple</strong> (Apple Push Notification service, on iPhone) to deliver each notification,
+together with its text, which includes the chosen name of the person who caused it. It never says how
+anyone is feeling. The token is deleted when you sign out or delete your account. If you turn
+notifications off for MoodTraker, nothing is shown.</p>
+<p>You can change your name, choose when to share, block and unblock people, sign out and <strong>delete
+your account at any time from the app</strong> (Settings, Friends, Delete account; also at
+<a href="delete.html">mood.baltajmn.dev/delete.html</a>). Deleting it removes your name, friends, blocks,
+hugs and shared days from the server at once; your moods stay on your phone. If you also use another app
+of ours with the same account, that app's account is kept until you delete it there.</p>
+
 <h3>Nothing else</h3>
 <p>MoodTraker contains no advertising SDK, no analytics SDK and no crash-reporting SDK. We do not
 build profiles, we do not use remarketing, and we do not sell or share personal information with
-anyone. The only reason the app would ever reach the network is to check your purchase status.</p>
+anyone. The app reaches the network only to check your purchase status and, if you use it, to see and
+share your mood with friends.</p>
 
 <h2>Permissions the app asks for</h2>
 <div class="wrap">
 <table>
   <tr><th>Permission</th><th>Why</th></tr>
-  <tr><td>Notifications</td><td>To show the daily reminder you set. The notification is built on your device; nothing goes through a server.</td></tr>
+  <tr><td>Notifications</td><td>To show the daily reminder you set, which is built on your device without any server; and, if you use friends, to tell you about friend requests and hugs.</td></tr>
   <tr><td>Run at startup</td><td>To put your reminder back after the phone reboots. Without it, reminders would silently stop.</td></tr>
-  <tr><td>Internet, network state</td><td>Only to check your purchase status. Unused while purchases are off.</td></tr>
+  <tr><td>Internet, network state</td><td>To check your purchase status and, if you use friends, to talk to our server.</td></tr>
   <tr><td>In-app billing</td><td>To offer the Pro purchase through Google Play.</td></tr>
   <tr><td>Wake lock, foreground service</td><td>Required by the library that keeps the home screen widget up to date.</td></tr>
+  <tr><td>Receive push messages (Google)</td><td>So that Google's notification service can deliver friend notifications, if you use friends.</td></tr>
 </table>
 </div>
 <p class="note">That is the complete list in the Android package, plus one permission the app defines
@@ -200,11 +244,14 @@ library. On iOS it only ever asks for notifications.</p>
 <h2>How long data is kept</h2>
 <p>Data on your device is kept until you delete the day or uninstall the app. Purchase records held by
 RevenueCat and by the app store are kept for as long as those services need in order to honour
-restores and to meet their own legal and tax obligations.</p>
+restores and to meet their own legal and tax obligations. Account data is kept until you delete your
+account. Shared days and hugs are kept for two days at most: the server deletes older ones every night.
+Failed invitation attempts are kept for one hour.</p>
 
 <h2>Children</h2>
 <p>MoodTraker is not directed at children under 13 and we do not knowingly collect information from
-them. The app has no accounts, no public content and no social features.</p>
+them. Seeing your friends' mood asks you to confirm that you are 16 or older before you sign in.
+Nothing in MoodTraker is public: only your friends see what you share.</p>
 
 <h2>Your rights under the GDPR</h2>
 <p>If you are in the European Economic Area or the United Kingdom, you have the right to access,
@@ -215,16 +262,24 @@ deleting a day erases it, uninstalling erases everything, and Export is data por
 purchase data held by RevenueCat, write to
 <a href="mailto:baltajmn@gmail.com">baltajmn@gmail.com</a> and we will act on your request. Note that
 we can only find your records if you give us the anonymous identifier or the store order number,
-precisely because we hold nothing that identifies you.</p>
-<p>Legal bases: performance of a contract (delivering the purchase you made) and our legitimate
-interest in preventing fraudulent restores. You also have the right to complain to your supervisory
+precisely because those records hold nothing that identifies you. If you have an account, you can see
+and correct your data (your name), withdraw your consent to share your mood and delete it all (your
+account) in the app.</p>
+<p>Legal bases: performance of a contract (delivering the purchase you made, and the friends features
+when you choose to use them); your <strong>explicit consent</strong> (GDPR article 9(2)(a)) for the
+moods you share, which are health data, and which you can withdraw at any time; and our legitimate
+interest in preventing fraudulent restores and in acting on reports to keep friends safe. You also have the right to complain to your supervisory
 authority. In Spain, the <a href="https://www.aepd.es" rel="noopener">Agencia Española de Protección
 de Datos</a>.</p>
 
 <h2>Your rights under the CCPA / CPRA</h2>
 <p>If you are a California resident: in the last twelve months we have collected the categories
-"identifiers" (an anonymous installation identifier and device identifiers) and "commercial
-information" (your purchase history), for the sole purpose of delivering the product you bought.</p>
+"identifiers" (an anonymous installation identifier and device identifiers; and, only if you use
+friends, your account identifier, email address, chosen name and a notification token for your phone)
+and "commercial information" (your purchase history), and, only if you choose to share them, the
+colour, face and score of your moods, which California treats as sensitive personal information about
+health. The purpose is delivering the product you bought and, if you use it, the friends features; we
+do not use or disclose sensitive information for anything else.</p>
 <p>We have <strong>not</strong> sold or shared personal information, and we do not use it for
 cross-context behavioural advertising. We do not knowingly sell the personal information of anyone
 under 16. You have the right to know, to delete, to correct, and not to be discriminated against for
@@ -246,13 +301,17 @@ device will also be described in the app's release notes.</p>
 <h1 id="es">Política de privacidad de MoodTraker</h1>
 <div class="strip" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
 <p class="lede">MoodTraker es un registro de ánimo: un cuadrado por día, el año entero en una pantalla.</p>
-<p class="updated">Última actualización: 17 de septiembre de 2026</p>
+<p class="updated">Última actualización: 27 de octubre de 2026</p>
 <p class="nav"><a href="#en">English</a><a href="mailto:baltajmn@gmail.com">baltajmn@gmail.com</a></p>
 
 <div class="box">
-<p><strong>La versión corta.</strong> MoodTraker no tiene cuentas ni servidor nuestro. Tus ánimos, tus
-días, tus notas, tus etiquetas y tus fotos son ficheros de tu teléfono. No podemos leerlos, no
-tenemos copia y no podríamos dárselos a nadie aunque quisiéramos. Desinstalar la app los borra.</p>
+<p><strong>La versión corta.</strong> MoodTraker funciona sin cuenta. Tus ánimos, tus días, tus notas,
+tus etiquetas y tus fotos son ficheros de tu teléfono. No podemos leerlos y no tenemos copia, con una
+excepción que eliges tú y que puedes apagar cuando quieras: si creas una cuenta opcional para ver el
+ánimo de tus amigos y que ellos vean el tuyo, la cara y el color de los días que decides compartir se
+guardan en nuestro servidor uno o dos días. Las notas, las etiquetas, las fotos y los nombres de tus
+ánimos no salen nunca de tu teléfono. Desinstalar la app borra tus ficheros; borrar tu cuenta borra lo
+que hay en el servidor.</p>
 </div>
 
 <h2>Lo que se queda en tu dispositivo</h2>
@@ -260,8 +319,9 @@ tenemos copia y no podríamos dárselos a nadie aunque quisiéramos. Desinstalar
 añades, los nombres y colores de tus ánimos, la hora del recordatorio y cualquier foto que pongas en
 un ánimo. Todo vive en el almacenamiento privado de la app, que ninguna otra app de tu teléfono
 puede leer.</p>
-<p>No hay registro. Nunca te pedimos tu nombre, tu correo ni tu teléfono, porque no hay nada a lo que
-asociarlos.</p>
+<p>Sin cuenta, nunca te pedimos tu nombre, tu correo ni tu teléfono, porque no hay nada a lo que
+asociarlos. Tus notas, etiquetas, fotos y los nombres que das a tus ánimos se quedan en este
+almacenamiento aunque uses la cuenta opcional que se describe abajo.</p>
 
 <h3>Fotos</h3>
 <p>Cuando pones una foto en un ánimo, el selector del propio sistema le entrega a la app esa única
@@ -283,11 +343,7 @@ acceder a ella. Se desactiva en los ajustes de copia de seguridad de Android.</p
 
 <h2>Lo que sale de tu dispositivo</h2>
 
-<h3>Hoy: nada</h3>
-<p>Tal y como se publica, MoodTraker no hace ninguna conexión de red. No tiene ningún servidor con el
-que hablar.</p>
-
-<h3>Cuando se activen las compras</h3>
+<h3>Compras</h3>
 <p>MoodTraker ofrece un único pago dentro de la app, por una sola vez. El pago lo procesa la tienda
 desde la que la instalaste, <strong>Google Play</strong> o la <strong>App Store</strong>. Nosotros no
 vemos ni recibimos los datos de tu tarjeta, tu dirección de facturación ni ningún otro dato de
@@ -301,20 +357,65 @@ correo ni a ningún perfil. Su
 <p>RevenueCat trata los datos en Estados Unidos. Las transferencias fuera del Espacio Económico
 Europeo están cubiertas por las Cláusulas Contractuales Tipo de la Comisión Europea.</p>
 
+<h3>Ver el ánimo de tus amigos (cuenta opcional)</h3>
+<p>Todo lo anterior funciona sin cuenta. Solo ver el ánimo de tus amigos, y que ellos vean el tuyo, te
+pide iniciar sesión, con <strong>Iniciar sesión con Apple</strong> o <strong>Google</strong>, y solo
+cuando abres esa parte de la app. Si no lo haces nunca, nada de esta sección te afecta.</p>
+<p>Cuando lo usas guardamos en nuestro servidor: el identificador y el correo electrónico que Apple o
+Google nos dan al iniciar sesión (con Apple puedes elegir una dirección de reenvío privada), el
+<strong>nombre que eliges mostrar</strong>, tu código de amistad, tus amigos y solicitudes de amistad, las
+personas que bloqueas, los reportes que envías y los abrazos que mandas y recibes (de quién, a quién y
+qué día). De cada día que decides compartir guardamos la fecha y la <strong>puntuación (1 a 5), el color
+y el emoji</strong> del ánimo que elegiste. Nunca guardamos ni recibimos el nombre del ánimo, tus notas,
+tus etiquetas ni tus fotos.</p>
+<p><strong>Tu ánimo es un dato de salud</strong>, así que pedimos tu consentimiento explícito antes de
+guardar nada: es la primera pregunta que ves al iniciar sesión, sin nada marcado de antemano (compartir
+siempre, preguntarme cada día o nunca). Guardamos tu respuesta y la fecha en que la diste. Puedes
+cambiarla cuando quieras en Ajustes; elegir no compartir lo detiene y borra los días que tenemos. Hasta
+que respondes, y si eliges no compartir, no se guarda nada de tus días. Un día que mantienes privado no
+deja rastro en el servidor, así que nadie puede deducir que ocultaste uno. Elegir no compartir no te
+impide ver a tus amigos.</p>
+<p>Tus amigos, y nadie más, ven tu nombre elegido y la cara y el color que compartiste de hoy y de ayer.
+Cada noche el servidor borra los días y los abrazos de más de dos días, y un día que borras o pasas a
+privado en tu teléfono también se quita del servidor.</p>
+<p>El servidor lo presta <strong>Supabase, Inc.</strong> como encargado del tratamiento, en la Unión
+Europea (Fráncfort, Alemania). El sistema de cuentas se comparte con Chroma, FlowTime y Quilt, otras
+apps del mismo desarrollador: si inicias sesión en varias con la misma cuenta de Apple o Google, es una
+sola cuenta, pero cada app guarda su propio nombre, amigos y datos, y ninguna puede ver los de otra.</p>
+<p>Hay tolerancia cero con los nombres abusivos. Puedes reportar o bloquear a cualquiera desde la app, y
+un reporte nos envía un correo con los nombres de las dos personas para que actuemos en 24 horas; lo
+entrega <strong>Resend, Inc.</strong> como encargado del tratamiento. Consulta las
+<a href="terms.html">condiciones de uso</a>.</p>
+<p>Para que MoodTraker te avise cuando alguien te manda una solicitud de amistad, acepta la tuya o te
+manda un abrazo, también con la app cerrada, guardamos con tu cuenta un <strong>identificador de
+notificaciones</strong> de tu teléfono. Se entrega a <strong>Google</strong> (Firebase Cloud Messaging,
+en Android) o a <strong>Apple</strong> (servicio de notificaciones push de Apple, en iPhone) para hacer
+llegar cada aviso, junto con su texto, que incluye el nombre elegido de la persona que lo provoca. Nunca
+dice cómo está nadie. El identificador se borra al cerrar sesión o al borrar tu cuenta. Si desactivas
+las notificaciones de MoodTraker, no se muestra nada.</p>
+<p>Puedes cambiar tu nombre, elegir cuándo compartir, bloquear y desbloquear, cerrar sesión y
+<strong>borrar tu cuenta cuando quieras desde la app</strong> (Ajustes, Amigos, Borrar cuenta; también
+en <a href="delete.html">mood.baltajmn.dev/delete.html</a>). Al borrarla se eliminan al momento del
+servidor tu nombre, tus amigos, tus bloqueos, tus abrazos y tus días compartidos; tus ánimos se quedan en
+tu teléfono. Si también usas otra app nuestra con la misma cuenta, la cuenta de esa app se conserva
+hasta que la borres allí.</p>
+
 <h3>Nada más</h3>
 <p>MoodTraker no lleva SDK de publicidad, ni de analítica, ni de informes de fallos. No hacemos
-perfiles, no hacemos remarketing y no vendemos ni compartimos información personal con nadie. La
-única razón por la que la app tocaría la red es comprobar el estado de tu compra.</p>
+perfiles, no hacemos remarketing y no vendemos ni compartimos información personal con nadie. La app
+toca la red solo para comprobar el estado de tu compra y, si lo usas, para ver y compartir tu ánimo con
+tus amigos.</p>
 
 <h2>Permisos que pide la app</h2>
 <div class="wrap">
 <table>
   <tr><th>Permiso</th><th>Para qué</th></tr>
-  <tr><td>Notificaciones</td><td>Para mostrar el recordatorio diario que configures. La notificación se construye en tu dispositivo; no pasa por ningún servidor.</td></tr>
+  <tr><td>Notificaciones</td><td>Para mostrar el recordatorio diario que configures, que se construye en tu dispositivo sin ningún servidor; y, si usas amigos, para avisarte de solicitudes de amistad y abrazos.</td></tr>
   <tr><td>Ejecutar al iniciar</td><td>Para volver a poner tu recordatorio después de reiniciar el teléfono. Sin él, los recordatorios dejarían de sonar sin avisar.</td></tr>
-  <tr><td>Internet, estado de la red</td><td>Solo para comprobar el estado de tu compra. Sin usar mientras las compras estén desactivadas.</td></tr>
+  <tr><td>Internet, estado de la red</td><td>Para comprobar el estado de tu compra y, si usas amigos, para hablar con nuestro servidor.</td></tr>
   <tr><td>Compras en la aplicación</td><td>Para ofrecer la compra de Pro a través de Google Play.</td></tr>
   <tr><td>Wake lock, servicio en primer plano</td><td>Los pide la biblioteca que mantiene al día el widget de la pantalla de inicio.</td></tr>
+  <tr><td>Recibir mensajes push (Google)</td><td>Para que el servicio de notificaciones de Google entregue los avisos de amigos, si usas amigos.</td></tr>
 </table>
 </div>
 <p class="note">Esa es la lista completa del paquete de Android, más un permiso que la app se define a
@@ -325,11 +426,15 @@ solo pide notificaciones.</p>
 <h2>Cuánto tiempo se guardan los datos</h2>
 <p>Los datos de tu dispositivo se guardan hasta que borras el día o desinstalas la app. Los registros
 de compra que tienen RevenueCat y la tienda se guardan el tiempo que esos servicios necesiten para
-poder restaurar la compra y para cumplir sus propias obligaciones legales y fiscales.</p>
+poder restaurar la compra y para cumplir sus propias obligaciones legales y fiscales. Los datos de la
+cuenta se guardan hasta que la borras. Los días compartidos y los abrazos se guardan dos días como
+máximo: el servidor borra los más antiguos cada noche. Los intentos fallidos de invitación se guardan
+una hora.</p>
 
 <h2>Menores</h2>
-<p>MoodTraker no está dirigida a menores de 13 años y no recogemos información de ellos a sabiendas.
-La app no tiene cuentas, ni contenido público, ni funciones sociales.</p>
+<p>MoodTraker no está dirigida a menores de 13 años y no recogemos información de ellos a sabiendas. Ver
+el ánimo de tus amigos te pide confirmar que tienes 16 años o más antes de iniciar sesión. Nada en
+MoodTraker es público: solo tus amigos ven lo que compartes.</p>
 
 <h2>Tus derechos según el RGPD</h2>
 <p>Si estás en el Espacio Económico Europeo o en el Reino Unido, tienes derecho a acceder, rectificar,
@@ -339,16 +444,25 @@ borrar un día lo borra, desinstalar lo borra todo y Exportar es la portabilidad
 compra que tiene RevenueCat, escribe a
 <a href="mailto:baltajmn@gmail.com">baltajmn@gmail.com</a> y actuaremos sobre tu solicitud. Ten en
 cuenta que solo podemos localizar tus registros si nos das el identificador anónimo o el número de
-pedido de la tienda, precisamente porque no guardamos nada que te identifique.</p>
-<p>Bases jurídicas: la ejecución de un contrato (entregarte la compra que hiciste) y nuestro interés
-legítimo en evitar restauraciones fraudulentas. También tienes derecho a reclamar ante tu autoridad
+pedido de la tienda, precisamente porque esos registros no contienen nada que te identifique. Si tienes cuenta, puedes ver y
+corregir tus datos (tu nombre), retirar tu consentimiento para compartir tu ánimo y borrarlo todo (tu
+cuenta) en la app.</p>
+<p>Bases jurídicas: la ejecución de un contrato (entregarte la compra que hiciste y las funciones de
+amigos cuando decides usarlas); tu <strong>consentimiento explícito</strong> (artículo 9.2.a del RGPD)
+para los ánimos que compartes, que son datos de salud y que puedes retirar cuando quieras; y nuestro
+interés legítimo en evitar restauraciones fraudulentas y en atender los reportes para mantener seguros a
+los amigos. También tienes derecho a reclamar ante tu autoridad
 de control. En España, la <a href="https://www.aepd.es" rel="noopener">Agencia Española de Protección
 de Datos</a>.</p>
 
 <h2>Tus derechos según la CCPA / CPRA</h2>
 <p>Si resides en California: en los últimos doce meses hemos recogido las categorías "identificadores"
-(un identificador anónimo de instalación e identificadores de dispositivo) e "información comercial"
-(tu historial de compra), con el único fin de entregarte el producto que compraste.</p>
+(un identificador anónimo de instalación e identificadores de dispositivo; y, solo si usas amigos, el
+identificador de tu cuenta, tu correo electrónico, tu nombre elegido y un identificador de
+notificaciones de tu teléfono) e "información comercial" (tu historial de compra), y, solo si decides
+compartirlos, el color, la cara y la puntuación de tus ánimos, que California trata como información
+personal sensible sobre la salud. La finalidad es entregarte el producto que compraste y, si lo usas, las
+funciones de amigos; no usamos ni revelamos la información sensible para nada más.</p>
 <p><strong>No</strong> hemos vendido ni compartido información personal, y no la usamos para
 publicidad conductual entre contextos. No vendemos a sabiendas la información personal de menores de
 16 años. Tienes derecho a saber, a borrar, a corregir y a no sufrir discriminación por ejercer esos
