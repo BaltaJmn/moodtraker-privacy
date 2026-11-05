@@ -42,20 +42,27 @@
   // GitHub Pages sirve esta pagina para cualquier ruta que no conoce, asi que es tambien la de los
   // enlaces de amistad (/f/<codigo>): con la app instalada el enlace no llega aqui, abre la app. Sin
   // ella, cada movil va a su tienda: Play en Android, la App Store en iPhone y iPad. En un ordenador
-  // salen las dos.
+  // salen las dos. /get es el enlace que lleva la imagen compartida desde la app: mismo reparto, con la
+  // campana marcada para ver en las dos consolas cuanto trae.
   var PLAY = "https://play.google.com/store/apps/details?id=com.baltajmn.mood";
   var APPLE = "https://apps.apple.com/app/id6819302341";
   var T = {
-    en: ["See how your friends are doing today on MoodTraker", "Install MoodTraker, then open this link again.", "This page does not exist."],
-    es: ["Mira cómo están hoy tus amigos en MoodTraker", "Instala MoodTraker y vuelve a abrir este enlace.", "Esta página no existe."],
-    pt: ["Veja como seus amigos estão hoje no MoodTraker", "Instale o MoodTraker e abra este link de novo.", "Esta página não existe."],
-    de: ["Sieh, wie es deinen Freunden heute geht, mit MoodTraker", "Installiere MoodTraker und öffne diesen Link dann noch einmal.", "Diese Seite gibt es nicht."],
-    fr: ["Vois comment vont tes amis aujourd'hui sur MoodTraker", "Installe MoodTraker, puis rouvre ce lien.", "Cette page n'existe pas."]
+    en: ["See how your friends are doing today on MoodTraker", "Install MoodTraker, then open this link again.", "This page does not exist.", "Your year in colours", "A mood tracker, one tap a day. Free on Android and iPhone."],
+    es: ["Mira cómo están hoy tus amigos en MoodTraker", "Instala MoodTraker y vuelve a abrir este enlace.", "Esta página no existe.", "Tu año en colores", "Tu estado de ánimo con un toque al día. Gratis en Android y iPhone."],
+    pt: ["Veja como seus amigos estão hoje no MoodTraker", "Instale o MoodTraker e abra este link de novo.", "Esta página não existe.", "Seu ano em cores", "Seu humor com um toque por dia. Grátis no Android e no iPhone."],
+    de: ["Sieh, wie es deinen Freunden heute geht, mit MoodTraker", "Installiere MoodTraker und öffne diesen Link dann noch einmal.", "Diese Seite gibt es nicht.", "Dein Jahr in Farben", "Deine Stimmung mit einem Tippen am Tag. Kostenlos für Android und iPhone."],
+    fr: ["Vois comment vont tes amis aujourd'hui sur MoodTraker", "Installe MoodTraker, puis rouvre ce lien.", "Cette page n'existe pas.", "Ton année en couleurs", "Ton humeur en un appui par jour. Gratuit sur Android et iPhone."]
   };
   var lang = (navigator.language || "en").slice(0, 2);
   var t = T[lang] || T.en;
   document.documentElement.lang = T[lang] ? lang : "en";
   var link = /^\/f\/[0-9a-fA-F]{10}\/?$/.test(location.pathname);
+  if (/^\/get\/?$/.test(location.pathname)) {
+    PLAY += "&referrer=utm_source%3Dmood-share%26utm_medium%3Dcard";
+    APPLE = "https://apps.apple.com/app/apple-store/id6819302341?pt=129564006&ct=mood-share&mt=8";
+    t = [t[3], t[4]];
+    link = true;
+  }
   var ua = navigator.userAgent || "";
   var android = /Android/i.test(ua);
   // iPadOS pide el sitio de escritorio: se hace pasar por un Mac, pero con pantalla tactil.
@@ -64,6 +71,8 @@
   function show(title, text, play, apple) {
     document.getElementById("title").textContent = title;
     document.getElementById("text").innerHTML = text;
+    document.getElementById("play").href = PLAY;
+    document.getElementById("apple").href = APPLE;
     document.getElementById("play").hidden = !play;
     document.getElementById("apple").hidden = !apple;
     document.getElementById("stores").hidden = !(play || apple);
