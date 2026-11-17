@@ -123,12 +123,12 @@
 <h1 id="en">MoodTraker Privacy Policy</h1>
 <div class="strip" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
 <p class="lede">MoodTraker is a mood tracker: one square per day, a whole year on one screen.</p>
-<p class="updated">Last updated: 6 November 2026</p>
+<p class="updated">Last updated: 17 November 2026</p>
 <p class="nav"><a href="#es">Español</a><a href="mailto:baltajmn@gmail.com">baltajmn@gmail.com</a></p>
 
 <div class="box">
 <p><strong>The short version.</strong> MoodTraker works without an account. Your moods, your days,
-your notes, your tags and your photos are files on your phone. We cannot read them and we have no copy
+your notes, your tags, your photos and your voice notes are files on your phone. We cannot read them and we have no copy
 of them, with one exception that you choose and can switch off at any time: if you create an optional
 account to see your friends' mood and let them see yours, the face and the colour of the days you
 choose to share are kept on our server for a day or two. Notes, tags, photos and the names of your
@@ -151,6 +151,23 @@ The copy never leaves your device. <strong>MoodTraker never reads your photo lib
 only ever receives the single image you chose in the system picker, and it does not ask for gallery
 permission.</p>
 
+<h3>Voice notes (microphone)</h3>
+<p>You can record a short voice note on a day. The microphone is used only while you record, started by
+you with a tap, and the recording is saved as a file in the app's private storage. It never leaves your
+device unless you export or share it yourself. The app never listens in the background.</p>
+
+<h3>Apple Health and Health Connect (optional)</h3>
+<p>If you turn it on in Settings (a Pro feature), MoodTraker reads your <strong>sleep and step
+counts</strong> from Apple Health on iPhone or Health Connect on Android, so it can set them next to
+your moods. It is read only: the app writes nothing to Health, and what it reads is kept in the app's
+private storage on your phone. <strong>It is never sent to us, to RevenueCat or to anyone else.</strong>
+You can turn it off at any time in Settings or in the Health permissions of your phone.</p>
+
+<h3>App lock</h3>
+<p>If you turn on the app lock, MoodTraker asks your phone to check your face or fingerprint (Face ID on
+iPhone, biometrics on Android). The check is done by the operating system. The app only receives a yes or
+a no, never your face, your fingerprint or anything that describes them.</p>
+
 <h3>Backups you make</h3>
 <p>Export writes your moods, days and photos into one file and hands it to the system share sheet, so
 you decide where it goes. Once you have saved it, that file is yours and is outside our control. If
@@ -172,7 +189,8 @@ it off in Android's backup settings.</p>
 <h2>What leaves your device</h2>
 
 <h3>Purchases</h3>
-<p>MoodTraker offers a single one-time in-app purchase. Payments are processed by the store you
+<p>MoodTraker Pro can be bought in the app as a one-time purchase, a monthly plan or a yearly plan (the
+yearly plan may start with a free trial). Payments are processed by the store you
 installed it from, <strong>Google Play</strong> or the <strong>App Store</strong>. We never see or
 receive your card details, your billing address or any other payment information.</p>
 <p>To know whether a given installation has bought Pro, the app uses <strong>RevenueCat, Inc.</strong>
@@ -181,6 +199,10 @@ behalf, that identifier, the purchase history attached to it, and technical devi
 MoodTraker never links that identifier to the optional friends account, so it is not linked to your
 name, your email address or any profile. See <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat's privacy
 policy</a>.</p>
+<p>To learn whether the Pro screen and the rating request work, the app also sends RevenueCat a few
+anonymous <strong>counters</strong> as customer attributes: how many times the Pro screen was shown and
+closed, which screen opened it, and in which app version the rating was asked. They never include your
+moods, tags, notes, streaks, sleep or steps, and they are not used to track you or for advertising.</p>
 <p>RevenueCat processes data in the United States. Transfers outside the European Economic Area are
 covered by the European Commission's Standard Contractual Clauses.</p>
 
@@ -228,7 +250,8 @@ of ours with the same account, that app's account is kept until you delete it th
 <h3>Nothing else</h3>
 <p>MoodTraker contains no advertising SDK, no analytics SDK and no crash-reporting SDK. We do not
 build profiles, we do not use remarketing, and we do not sell or share personal information with
-anyone. The app reaches the network only to check your purchase status and, if you use it, to see and
+anyone. The app reaches the network only to check your purchase status, to send the anonymous counters
+described above and, if you use it, to see and
 share your mood with friends.</p>
 
 <h2>Permissions the app asks for</h2>
@@ -240,13 +263,17 @@ share your mood with friends.</p>
   <tr><td>Internet, network state</td><td>To check your purchase status and, if you use friends, to talk to our server.</td></tr>
   <tr><td>In-app billing</td><td>To offer the Pro purchase through Google Play.</td></tr>
   <tr><td>Wake lock, foreground service</td><td>Required by the library that keeps the home screen widget up to date.</td></tr>
+  <tr><td>Microphone</td><td>To record a voice note on a day, only when you tap record.</td></tr>
+  <tr><td>Face ID, biometrics</td><td>To unlock the app when you turn on the app lock. The system does the check.</td></tr>
+  <tr><td>Health Connect: read steps, read sleep (Android); Apple Health (iPhone)</td><td>To read your sleep and steps and set them next to your moods, only if you turn it on in Settings. Read only, never sent anywhere.</td></tr>
   <tr><td>Receive push messages (Google)</td><td>So that Google's notification service can deliver friend notifications, if you use friends.</td></tr>
 </table>
 </div>
 <p class="note">That is the complete list in the Android package, plus one permission the app defines
 for itself so that only its own components can talk to its widget. MoodTraker does
-<strong>not</strong> request your location, your contacts, your camera, your microphone or your photo
-library. On iOS it only ever asks for notifications.</p>
+<strong>not</strong> request your location, your contacts, your camera or your photo library. On iOS
+it asks for notifications, the microphone, Face ID and Apple Health, each only for the feature that
+needs it.</p>
 
 <h2>How long data is kept</h2>
 <p>Data on your device is kept until you delete the day or uninstall the app. Purchase records held by
@@ -283,7 +310,8 @@ de Datos</a>.</p>
 <p>If you are a California resident: in the last twelve months we have collected the categories
 "identifiers" (an anonymous installation identifier and device identifiers; and, only if you use
 friends, your account identifier, email address, chosen name and a notification token for your phone)
-and "commercial information" (your purchase history), and, only if you choose to share them, the
+and "commercial information" (your purchase history), "internet or other electronic activity" (the
+anonymous Pro-screen counters), and, only if you choose to share them, the
 colour, face and score of your moods, which California treats as sensitive personal information about
 health. The purpose is delivering the product you bought and, if you use it, the friends features; we
 do not use or disclose sensitive information for anything else.</p>
@@ -308,12 +336,12 @@ device will also be described in the app's release notes.</p>
 <h1 id="es">Política de privacidad de MoodTraker</h1>
 <div class="strip" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
 <p class="lede">MoodTraker es un registro de ánimo: un cuadrado por día, el año entero en una pantalla.</p>
-<p class="updated">Última actualización: 6 de noviembre de 2026</p>
+<p class="updated">Última actualización: 17 de noviembre de 2026</p>
 <p class="nav"><a href="#en">English</a><a href="mailto:baltajmn@gmail.com">baltajmn@gmail.com</a></p>
 
 <div class="box">
 <p><strong>La versión corta.</strong> MoodTraker funciona sin cuenta. Tus ánimos, tus días, tus notas,
-tus etiquetas y tus fotos son ficheros de tu teléfono. No podemos leerlos y no tenemos copia, con una
+tus etiquetas, tus fotos y tus notas de voz son ficheros de tu teléfono. No podemos leerlos y no tenemos copia, con una
 excepción que eliges tú y que puedes apagar cuando quieras: si creas una cuenta opcional para ver el
 ánimo de tus amigos y que ellos vean el tuyo, la cara y el color de los días que decides compartir se
 guardan en nuestro servidor uno o dos días. Las notas, las etiquetas, las fotos y los nombres de tus
@@ -336,6 +364,23 @@ imagen, y la app la copia a su almacenamiento privado para poder dibujarla en la
 y en las tarjetas para compartir. La copia no sale del dispositivo. <strong>MoodTraker no lee tu
 galería</strong>: solo recibe la imagen que tú eliges en el selector, y no pide permiso de galería.</p>
 
+<h3>Notas de voz (micrófono)</h3>
+<p>Puedes grabar una nota de voz corta en un día. El micrófono se usa solo mientras grabas, y empiezas
+tú con un toque; la grabación se guarda como un fichero en el almacenamiento privado de la app. No sale
+de tu dispositivo salvo que la exportes o la compartas tú. La app nunca escucha en segundo plano.</p>
+
+<h3>Apple Salud y Health Connect (opcional)</h3>
+<p>Si lo activas en Ajustes (una función de Pro), MoodTraker lee tu <strong>sueño y tus pasos</strong> de
+Apple Salud en iPhone o de Health Connect en Android, para ponerlos junto a tus ánimos. Es solo lectura:
+la app no escribe nada en Salud, y lo que lee se guarda en el almacenamiento privado de tu teléfono.
+<strong>No se envía nunca a nosotros, ni a RevenueCat ni a nadie.</strong> Puedes desactivarlo cuando
+quieras en Ajustes o en los permisos de Salud de tu teléfono.</p>
+
+<h3>Bloqueo de la app</h3>
+<p>Si activas el bloqueo de la app, MoodTraker le pide a tu teléfono que compruebe tu cara o tu huella
+(Face ID en iPhone, biometría en Android). La comprobación la hace el sistema operativo. La app solo
+recibe un sí o un no, nunca tu cara, tu huella ni nada que las describa.</p>
+
 <h3>Las copias que haces tú</h3>
 <p>Exportar crea un fichero con tus ánimos, tus días y tus fotos, y te lo entrega a la hoja de
 compartir del sistema para que decidas dónde va. Una vez guardado, ese fichero es tuyo y está fuera
@@ -357,7 +402,8 @@ acceder a ella. Se desactiva en los ajustes de copia de seguridad de Android.</p
 <h2>Lo que sale de tu dispositivo</h2>
 
 <h3>Compras</h3>
-<p>MoodTraker ofrece un único pago dentro de la app, por una sola vez. El pago lo procesa la tienda
+<p>MoodTraker Pro se puede comprar en la app con un pago único, un plan mensual o un plan anual (el
+plan anual puede empezar con una prueba gratis). El pago lo procesa la tienda
 desde la que la instalaste, <strong>Google Play</strong> o la <strong>App Store</strong>. Nosotros no
 vemos ni recibimos los datos de tu tarjeta, tu dirección de facturación ni ningún otro dato de
 pago.</p>
@@ -367,6 +413,11 @@ por cuenta nuestra, ese identificador, el historial de compra asociado e identif
 dispositivo. MoodTraker nunca liga ese identificador a la cuenta opcional de amigos, así que no está
 ligado a tu nombre, a tu correo ni a ningún perfil. Su
 <a href="https://www.revenuecat.com/privacy" rel="noopener">política de privacidad</a>.</p>
+<p>Para saber si la pantalla de Pro y la petición de valoración funcionan, la app también envía a
+RevenueCat unos <strong>contadores</strong> anónimos como atributos de cliente: cuántas veces se mostró y
+se cerró la pantalla de Pro, qué pantalla la abrió y en qué versión de la app se pidió la valoración.
+Nunca incluyen tus ánimos, etiquetas, notas, rachas, sueño ni pasos, y no se usan para rastrearte ni para
+publicidad.</p>
 <p>RevenueCat trata los datos en Estados Unidos. Las transferencias fuera del Espacio Económico
 Europeo están cubiertas por las Cláusulas Contractuales Tipo de la Comisión Europea.</p>
 
@@ -416,7 +467,8 @@ hasta que la borres allí.</p>
 <h3>Nada más</h3>
 <p>MoodTraker no lleva SDK de publicidad, ni de analítica, ni de informes de fallos. No hacemos
 perfiles, no hacemos remarketing y no vendemos ni compartimos información personal con nadie. La app
-toca la red solo para comprobar el estado de tu compra y, si lo usas, para ver y compartir tu ánimo con
+toca la red solo para comprobar el estado de tu compra, para enviar los contadores anónimos
+descritos arriba y, si lo usas, para ver y compartir tu ánimo con
 tus amigos.</p>
 
 <h2>Permisos que pide la app</h2>
@@ -428,13 +480,16 @@ tus amigos.</p>
   <tr><td>Internet, estado de la red</td><td>Para comprobar el estado de tu compra y, si usas amigos, para hablar con nuestro servidor.</td></tr>
   <tr><td>Compras en la aplicación</td><td>Para ofrecer la compra de Pro a través de Google Play.</td></tr>
   <tr><td>Wake lock, servicio en primer plano</td><td>Los pide la biblioteca que mantiene al día el widget de la pantalla de inicio.</td></tr>
+  <tr><td>Micrófono</td><td>Para grabar una nota de voz en un día, solo cuando pulsas grabar.</td></tr>
+  <tr><td>Face ID, biometría</td><td>Para desbloquear la app cuando activas el bloqueo. La comprobación la hace el sistema.</td></tr>
+  <tr><td>Health Connect: leer pasos, leer sueño (Android); Apple Salud (iPhone)</td><td>Para leer tu sueño y tus pasos y ponerlos junto a tus ánimos, solo si lo activas en Ajustes. Solo lectura, no se envía a ningún sitio.</td></tr>
   <tr><td>Recibir mensajes push (Google)</td><td>Para que el servicio de notificaciones de Google entregue los avisos de amigos, si usas amigos.</td></tr>
 </table>
 </div>
 <p class="note">Esa es la lista completa del paquete de Android, más un permiso que la app se define a
 sí misma para que solo sus propios componentes puedan hablar con su widget. MoodTraker
-<strong>no</strong> pide tu ubicación, tus contactos, tu cámara, tu micrófono ni tu galería. En iOS
-solo pide notificaciones.</p>
+<strong>no</strong> pide tu ubicación, tus contactos, tu cámara ni tu galería. En iOS pide
+notificaciones, micrófono, Face ID y Apple Salud, cada uno solo para la función que lo necesita.</p>
 
 <h2>Cuánto tiempo se guardan los datos</h2>
 <p>Los datos de tu dispositivo se guardan hasta que borras el día o desinstalas la app. Los registros
@@ -472,7 +527,8 @@ de Datos</a>.</p>
 <p>Si resides en California: en los últimos doce meses hemos recogido las categorías "identificadores"
 (un identificador anónimo de instalación e identificadores de dispositivo; y, solo si usas amigos, el
 identificador de tu cuenta, tu correo electrónico, tu nombre elegido y un identificador de
-notificaciones de tu teléfono) e "información comercial" (tu historial de compra), y, solo si decides
+notificaciones de tu teléfono) e "información comercial" (tu historial de compra), "actividad en internet u otra actividad electrónica"
+(los contadores anónimos de la pantalla de Pro), y, solo si decides
 compartirlos, el color, la cara y la puntuación de tus ánimos, que California trata como información
 personal sensible sobre la salud. La finalidad es entregarte el producto que compraste y, si lo usas, las
 funciones de amigos; no usamos ni revelamos la información sensible para nada más.</p>
